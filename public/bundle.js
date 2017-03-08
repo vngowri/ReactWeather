@@ -12729,11 +12729,20 @@ module.exports = About;
 var React = __webpack_require__(5);
 
 var Examples = function Examples(props) {
-      return React.createElement(
-            'h3',
-            null,
-            ' Examples component'
-      );
+  return React.createElement(
+    'div',
+    null,
+    React.createElement(
+      'h3',
+      null,
+      ' Examples component!'
+    ),
+    React.createElement(
+      'p',
+      null,
+      ' This is example page !'
+    )
+  );
 };
 
 module.exports = Examples;
