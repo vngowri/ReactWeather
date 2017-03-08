@@ -12735,7 +12735,7 @@ var Examples = function Examples(props) {
     React.createElement(
       'h3',
       null,
-      ' Examples component!'
+      ' Examples'
     ),
     React.createElement(
       'p',
