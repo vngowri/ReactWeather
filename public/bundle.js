@@ -13688,19 +13688,44 @@ module.exports = About;
 
 var React = __webpack_require__(5);
 
+var _require = __webpack_require__(112),
+    Link = _require.Link;
+
 var Examples = function Examples(props) {
   return React.createElement(
     'div',
     null,
     React.createElement(
-      'h3',
-      null,
+      'h1',
+      { className: 'text-center' },
       ' Examples'
     ),
     React.createElement(
       'p',
       null,
-      ' This is example page !'
+      'Here are few example locations to try out:'
+    ),
+    React.createElement(
+      'ol',
+      null,
+      React.createElement(
+        'li',
+        null,
+        React.createElement(
+          Link,
+          { to: '/?location=dallas' },
+          'Dallas, TX'
+        )
+      ),
+      React.createElement(
+        'li',
+        null,
+        React.createElement(
+          Link,
+          { to: '/?location=rio' },
+          'Rio, Brazil'
+        )
+      )
     )
   );
 };
@@ -13723,11 +13748,19 @@ var Main = function Main(props) {
     null,
     React.createElement(Nav, null),
     React.createElement(
+      'div',
+      { className: 'row' },
+      React.createElement(
+        'div',
+        { className: 'columns medium-6 large-4 small-centered' },
+        props.children
+      )
+    ),
+    React.createElement(
       'h3',
       null,
       ' Main Component'
-    ),
-    props.children
+    )
   );
 };
 module.exports = Main;
