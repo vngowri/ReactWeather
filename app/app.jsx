@@ -11,6 +11,9 @@ var Examples = require('Examples');
 require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
 $(document).foundation();
 
+//load app.css
+require('style-loader!css-loader!applicationStyles');
+
 /*var obj1 = {
   name: 'gowri',
   location: 'dallas'
