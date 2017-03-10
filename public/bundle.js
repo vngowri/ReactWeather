@@ -13826,7 +13826,7 @@ var Nav = React.createClass({
       ),
       React.createElement(
         'div',
-        { classNme: 'top-bar-right' },
+        { className: 'top-bar-right' },
         React.createElement(
           'form',
           { onSubmit: this.onSearch },

@@ -25,7 +25,7 @@ render: function() {
             </li>
           </ul>
         </div>
-        <div classNme="top-bar-right">
+        <div className="top-bar-right">
           <form onSubmit={this.onSearch}>
             <ul className="menu">
               <li>
