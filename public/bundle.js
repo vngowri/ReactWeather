@@ -13971,6 +13971,11 @@ var WeatherForm = React.createClass({
       'form',
       { onSubmit: this.onFormSubmit },
       React.createElement(
+        'h3',
+        { className: 'text-center' },
+        ' Get Weather'
+      ),
+      React.createElement(
         'div',
         null,
         React.createElement('input', { type: 'text', placeholder: 'Enter City Name', ref: 'location' })
@@ -13980,7 +13985,7 @@ var WeatherForm = React.createClass({
         null,
         React.createElement(
           'button',
-          { type: 'text' },
+          { className: 'button expanded hollow', type: 'text' },
           'Get Weather'
         )
       )
@@ -14004,13 +14009,13 @@ var WeatherMsg = function WeatherMsg(_ref) {
       location = _ref.location;
 
   return React.createElement(
-    'h2',
-    null,
-    ' It is ',
+    "h3",
+    { className: "text-center" },
+    " It is ",
     temp,
-    ' in ',
+    " in ",
     location,
-    '!'
+    "!"
   );
 };
 
