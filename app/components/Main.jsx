@@ -10,8 +10,7 @@ var Main = (props) => {
           <div className="columns medium-6 large-4 small-centered">
             {props.children}
           </div>
-        </div>
-      <h3> Main Component</h3>
+        </div>      
       </div>
     );
 }
