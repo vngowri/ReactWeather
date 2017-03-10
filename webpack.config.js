@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   entry: [
     'script-loader!jquery/dist/jquery.min.js',
-    'script-loader!foundation-sites/dist/js/foundation.min.js',    
+    'script-loader!foundation-sites/dist/js/foundation.min.js',
     './app/app.jsx'
   ],
   externals: {
@@ -29,7 +29,8 @@ module.exports = {
       Examples: path.resolve(__dirname,  'app/components/Examples.jsx'),
       WeatherForm: path.resolve(__dirname,  'app/components/WeatherForm.jsx'),
       WeatherMsg: path.resolve(__dirname,  'app/components/WeatherMsg.jsx'),
-      openWeatherMap: path.resolve(__dirname,  'app/api/openWeatherMap.jsx')
+      ErrorModal: path.resolve(__dirname,  'app/components/ErrorModal.jsx'),
+      openWeatherMap: path.resolve(__dirname,  'app/api/openWeatherMap.jsx')      
     },
     extensions: ['.js', '.jsx']
   },
